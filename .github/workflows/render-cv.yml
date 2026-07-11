@@ -1,0 +1,46 @@
+name: Render CV
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    env:
+      WEBSITE_TOKEN: ${{ secrets.WEBSITE_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install RenderCV
+        run: pip install "rendercv[full]"
+
+      - name: Render CV
+        run: rendercv render zuo_CV.yaml
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: Xingdong_Zuo_CV
+          path: rendercv_output/Xingdong_Zuo_CV.pdf
+
+      - name: Publish PDF to website
+        if: env.WEBSITE_TOKEN != ''
+        run: |
+          git clone --depth 1 "https://x-access-token:${WEBSITE_TOKEN}@github.com/zuoxingdong/zuoxingdong.github.io.git" site
+          cp rendercv_output/Xingdong_Zuo_CV.pdf site/public/cv.pdf
+          cd site
+          git add public/cv.pdf
+          if git diff --cached --quiet; then
+            echo "CV unchanged, nothing to publish"
+            exit 0
+          fi
+          git config user.name "Xingdong Zuo"
+          git config user.email "18168681+zuoxingdong@users.noreply.github.com"
+          git commit -m "Update CV PDF"
+          git push

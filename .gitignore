@@ -1,0 +1,9 @@
+# Whitelist: ignore everything except the files the CV needs
+*
+!.gitignore
+!.github/
+!.github/workflows/
+!.github/workflows/*.yml
+!zuo_CV.yaml
+!profile_photo.jpg
+!profile_picture.jpg
