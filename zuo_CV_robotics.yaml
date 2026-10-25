@@ -1,0 +1,256 @@
+cv:
+  name: Xingdong Zuo
+  photo: profile_photo.jpg
+  location: Seongnam, South Korea
+  email: zuoxingdong@hotmail.com
+  website: https://zuoxingdong.github.io
+  social_networks:
+    - network: LinkedIn
+      username: zuoxingdong
+    - network: GitHub
+      username: zuoxingdong
+    - network: Google Scholar
+      username: Fn3Jm7wAAAAJ
+  sections:
+    experience:
+      - company: Naver Corp
+        position: Research Engineer
+        start_date: 2021-05
+        end_date: present
+        location: South Korea
+        highlights:
+          - 'Built auto-bidding for display ads with offline RL (customized IQL) trained on large-scale logged interaction data, achieving a double-digit improvement in ads efficiency; presented at [Naver DAN 2025](https://youtu.be/iD4FTmDay6Y?t=294).'
+          - 'Improved CVR and ROAS of NAVER Dynamic AD with advanced retrieval and RL models.'
+          - 'Developed RL recommendation models for LINE Wallet, optimizing long-term user engagement.'
+          - 'More: prototyped RLHF for user foundation models; integrated offline RL into Smart Message ranking; improved embedding and reranker models for Brand Chatbot; built the QueryLake ETL library and KPI reporting pipelines.'
+      - company: Bosch Center for Artificial Intelligence
+        position: Master Thesis
+        start_date: 2017-05
+        end_date: 2017-11
+        location: Germany
+        summary: 'Sample-efficient model-based policy search via Bayesian Neural Network dynamics models.'
+        highlights:
+          - 'Improved sample efficiency of model-based RL on continuous control from ~10 to ~6 trials.'
+    education:
+      - institution: University of Freiburg
+        area: Computer Science
+        degree: M.Sc.
+        start_date: 2015
+        end_date: 2019
+        location: Freiburg, Germany
+        summary: 'Focus: Machine Learning and Reinforcement Learning'
+        highlights: []
+      - institution: Linnaeus University
+        area: Applied Mathematics
+        degree: B.Sc.
+        start_date: 2010
+        end_date: 2015
+        location: Vaxjo, Sweden
+        summary: 'Minor: Computer Science'
+        highlights: []
+    projects:
+      - name: '[Drift-VLA](https://zuoxingdong.github.io/drift-vla) — Direct One‑Step VLA Action Generation'
+        start_date: 2026
+        end_date: present
+        summary: 'Research on VLA inference via one-step drifting, replacing iterative flow matching.'
+        highlights:
+          - 'Proposed **action-dimension drifting**.'
+          - 'Faster decoding by 3–4×: 85.6 vs 259.8 ms/chunk for Pi0.5.'
+          - 'Real LeKiwi task: 9/10 rollouts. On LIBERO, Pi0.5-Drift reaches 97.4% at 1 NFE against 96.9% for flow matching at 10 NFE.'
+      - name: '[Mobile Manipulation with LeKiwi and PincOpen](https://huggingface.co/blog/zuoxingdong/mobile-manipulation-lekiwi-pincopen) — HF Blog'
+        start_date: 2026
+        end_date: present
+        highlights:
+          - 'Integrated the PincOpen gripper into LeKiwi: published a detailed build tutorial, and diagnosed an arm-extension voltage-drop failure.'
+      - name: '[LeRobot Worldwide Hackathon 2025](https://www.youtube.com/watch?v=HgN0qIFSd8I&t=117s) — Hugging Face'
+        start_date: 2025
+        end_date: 2025
+        summary: 'Led a 5-person team over 2 days to complete a language-instructed manipulation task using SmolVLA on real hardware.'
+        highlights:
+          - 'Owned team coordination, task decomposition.'
+      - name: '[lekiwi-tui](https://github.com/zuoxingdong/lekiwi-tui) (author)'
+        start_date: 2026
+        end_date: present
+        summary: 'Terminal control center for the LeKiwi robot workflow, built on LeRobot. Also [lerobokinson](https://github.com/zuoxingdong/lerobokinson) (2025), a GUI for PD gain tuning of Dynamixel servos.'
+    publications:
+      - title: 'Constrained Auto-Bidding via Generative Response Modeling'
+        authors:
+          - E Yang
+          - X Zuo
+          - K M Kim
+        journal: 'ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)'
+        url: https://dl.acm.org/doi/10.1145/3770855.3817847
+        date: 2026
+      - title: 'Method and System to Provide Information Data with Minimal Infrastructure Resources'
+        authors:
+          - X Zuo
+          - et al.
+        journal: 'Korean Patent Publication No. 10-2025-0124713'
+        url: https://patents.google.com/patent/KR20250124713A/en
+        date: 2025
+      - title: 'HyperCLOVA X Technical Report'
+        authors:
+          - HyperCLOVA X Team (incl. X Zuo)
+        journal: 'arXiv preprint'
+        url: https://arxiv.org/abs/2404.01954
+        date: 2024
+      - title: 'Direct preference-based policy optimization without reward modeling'
+        authors:
+          - G An
+          - J Lee
+          - X Zuo
+          - N Kosaka
+          - K M Kim
+          - H O Song
+        journal: 'Advances in Neural Information Processing Systems 36'
+        url: https://arxiv.org/abs/2301.12842
+        date: 2023
+      - title: 'Numerical simulation of Asano-Khrennikov-Ohya quantum-like decision making model'
+        authors:
+          - X Zuo
+        journal: NeuroQuantology 12 (4)
+        date: 2014
+    skills:
+      - label: Robot Learning
+        details: 'Vision-Language-Action models (SmolVLA, PI05, ACT), LeRobot, SO-101 & LeKiwi, PincOpen gripper, Feetech/Dynamixel servo'
+      - label: Reinforcement Learning
+        details: 'Offline RL (IQL, CQL), PPO, model-based RL (PILCO)'
+      - label: Simulation & Evaluation
+        details: 'MuJoCo (RL policy training), LIBERO benchmark, OpenAI Gym / Gymnasium'
+      - label: ML Engineering
+        details: 'PyTorch, multi-GPU distributed training, Kubeflow, Docker, Polars, Trino SQL, Qdrant, Linux, Git, Claude Code'
+      - label: Languages
+        details: 'English (fluent), Chinese (native)'
+      - label: Work Authorization
+        details: 'E-7 visa (Korea)'
+    open_source:
+      - name: 'LeRobot Contributor ([11 PRs](https://github.com/huggingface/lerobot/pulls?q=is%3Apr+author%3Azuoxingdong+is%3Amerged), [#11 contributor in 2026](https://github.com/huggingface/lerobot/graphs/contributors?from=1%2F3%2F2026&to=8%2F23%2F2026)) — Hugging Face'
+        start_date: 2025
+        end_date: present
+        highlights:
+          - 'Fixed SmolVLA VLM layer freezing under `train_expert_only=False` ([#4019](https://github.com/huggingface/lerobot/pull/4019))'
+          - 'Batched video encoding for faster dataset recording ([#1390](https://github.com/huggingface/lerobot/pull/1390))'
+          - 'LeKiwi observation streaming over ZMQ multipart, 25% less bandwidth ([#4088](https://github.com/huggingface/lerobot/pull/4088)); LeKiwi support in the replay and rollout/eval CLIs ([#3739](https://github.com/huggingface/lerobot/pull/3739), [#3742](https://github.com/huggingface/lerobot/pull/3742))'
+          - 'LIBERO reproducibility docs for the `lerobot/libero` dataset and pi05 quickstart ([#4185](https://github.com/huggingface/lerobot/pull/4185), [#4186](https://github.com/huggingface/lerobot/pull/4186))'
+          - 'Open PRs — SmolVLA inference optimization: RoPE cache precompute ([#4372](https://github.com/huggingface/lerobot/pull/4372)), SDPA attention with KV/mask reuse ([#4181](https://github.com/huggingface/lerobot/pull/4181)); trackio tracking ([#4320](https://github.com/huggingface/lerobot/pull/4320))'
+      - name: '[rlbidder](https://github.com/zuoxingdong/rlbidder) (author)'
+        start_date: 2025
+        end_date: present
+        summary: 'Modular reinforcement learning auto-bidding library for research and production.'
+      - name: 'OpenAI Gym Contributor ([42 PRs](https://github.com/openai/gym/pulls?q=is%3Apr+author%3Azuoxingdong), top #5 contributor, Nov. 2019)'
+        start_date: 2018
+        end_date: 2020
+        highlights:
+          - 'Implemented 12 of the 14 environment Wrapper classes'
+          - 'Refactored spaces (`flatdim`, `flatten`, `unflatten`) and vectorized-environment infrastructure'
+      - name: 'PyTorch Contributor ([31 PRs](https://github.com/pytorch/pytorch/pulls?q=is%3Apr+author%3Azuoxingdong))'
+        start_date: 2018
+        end_date: 2020
+        highlights:
+          - '`TanhTransform` for constrained distributions ([#19785](https://github.com/pytorch/pytorch/pull/19785), [#40160](https://github.com/pytorch/pytorch/pull/40160))'
+          - 'DataLoader `drop_last` for non-divisible dataset sizes ([#1133](https://github.com/pytorch/pytorch/pull/1133))'
+          - 'Also `parameters_to_vector` ([#2795](https://github.com/pytorch/pytorch/pull/2795)), `ModuleList.insert` ([#11664](https://github.com/pytorch/pytorch/pull/11664)), and a numerical-stability fix in `SigmoidTransform` ([#19802](https://github.com/pytorch/pytorch/pull/19802))'
+      - name: '[lagom](https://github.com/zuoxingdong/lagom) (author)'
+        start_date: 2018
+        end_date: 2021
+        summary: 'PyTorch library for rapid prototyping of reinforcement learning algorithms (378★).'
+      - name: 'Other libraries (author)'
+        start_date: 2017
+        end_date: 2020
+        summary: '[mazelab](https://github.com/zuoxingdong/mazelab) (271★), [VIN](https://github.com/zuoxingdong/VIN_PyTorch_Visdom) (223★), [dm2gym](https://github.com/zuoxingdong/dm2gym) (87★), [DeepPILCO](https://github.com/zuoxingdong/DeepPILCO) (54★).'
+design:
+  theme: moderncv
+  page:
+    size: a4
+    top_margin: 1.7cm
+    bottom_margin: 1.7cm
+    left_margin: 2cm
+    right_margin: 2cm
+    show_footer: true
+    show_top_note: true
+  colors:
+    body: rgb(0, 0, 0)
+    name: rgb(0, 150, 136)
+    connections: rgb(0, 150, 136)
+    section_titles: rgb(0, 150, 136)
+    links: rgb(156, 39, 176)
+    footer: rgb(128, 128, 128)
+    top_note: rgb(128, 128, 128)
+  typography:
+    line_spacing: 0.6em
+    alignment: justified
+    date_and_location_column_alignment: right
+    font_family: Roboto
+    font_size:
+      body: 10.5pt
+      name: 25pt
+      section_titles: 1.4em
+    bold:
+      name: false
+      section_titles: true
+    small_caps:
+      section_titles: true
+  links:
+    underline: true
+    show_external_link_icon: true
+  header:
+    alignment: left
+    photo_width: 3.5cm
+    space_below_name: 0.7cm
+    space_below_connections: 0.7cm
+    connections:
+      separator: ''
+      show_icons: true
+      space_between_connections: 0.5cm
+  section_titles:
+    type: moderncv
+    line_thickness: 0.15cm
+    space_above: 0.55cm
+    space_below: 0.3cm
+  sections:
+    allow_page_break: true
+    space_between_regular_entries: 0.3cm
+    show_time_spans_in: []
+  entries:
+    date_and_location_width: 4.15cm
+    side_space: 0cm
+    space_between_columns: 0.4cm
+    allow_page_break: true
+    short_second_row: false
+    degree_width: 1cm
+    summary:
+      space_left: 0cm
+    highlights:
+      bullet: •
+      space_left: 0cm
+      space_above: 0.2cm
+      space_between_items: 0.16cm
+      space_between_bullet_and_text: 0.3em
+  templates:
+    footer: NAME - Page PAGE_NUMBER of TOTAL_PAGES
+    top_note: Last updated in CURRENT_DATE
+    one_line_entry:
+      main_column: '**LABEL:** DETAILS'
+    education_entry:
+      main_column: |-
+        **INSTITUTION**, DEGREE_WITH_AREA -- LOCATION
+        SUMMARY
+        HIGHLIGHTS
+      degree_column: null
+      date_and_location_column: DATE
+    normal_entry:
+      main_column: |-
+        **NAME** -- **LOCATION**
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column: DATE
+    experience_entry:
+      main_column: |-
+        **POSITION**, COMPANY -- LOCATION
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column: DATE
+locale:
+  language: english
+settings:
+  bold_keywords: []

@@ -5,5 +5,6 @@
 !.github/workflows/
 !.github/workflows/*.yml
 !zuo_CV.yaml
+!zuo_CV_robotics.yaml
 !profile_photo.jpg
 !profile_picture.jpg

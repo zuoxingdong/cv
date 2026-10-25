@@ -29,6 +29,15 @@ jobs:
           name: Xingdong_Zuo_CV
           path: rendercv_output/Xingdong_Zuo_CV.pdf
 
+      - name: Render robotics CV
+        run: rendercv render zuo_CV_robotics.yaml -o rendercv_output_robotics
+
+      - name: Upload robotics PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: Xingdong_Zuo_CV_Robotics
+          path: rendercv_output_robotics/Xingdong_Zuo_CV.pdf
+
       - name: Publish PDF to website
         if: env.WEBSITE_TOKEN != ''
         run: |
