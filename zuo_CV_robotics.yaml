@@ -124,7 +124,7 @@ cv:
       - label: Reinforcement Learning
         details: 'Offline RL (IQL, CQL), PPO, model-based RL (PILCO)'
       - label: Simulation & Evaluation
-        details: 'MuJoCo (RL policy training, browser WASM), LIBERO benchmark, OpenAI Gym / Gymnasium, CadQuery, three.js'
+        details: 'MuJoCo (RL policy training), LIBERO benchmark, OpenAI Gym / Gymnasium'
       - label: ML Engineering
         details: 'PyTorch, multi-GPU distributed training, Kubeflow, Docker, Polars, Trino SQL, Qdrant, Linux, Git, Claude Code'
       - label: Languages
