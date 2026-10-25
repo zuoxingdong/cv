@@ -57,6 +57,14 @@ cv:
           - 'Proposed **action-dimension drifting**.'
           - 'Faster decoding by 3–4×: 85.6 vs 259.8 ms/chunk for Pi0.5.'
           - 'Real LeKiwi task: 9/10 rollouts. On LIBERO, Pi0.5-Drift reaches 97.4% at 1 NFE against 96.9% for flow matching at 10 NFE.'
+      - name: '[LeRobot CAD Studio](https://github.com/zuoxingdong/lerobot-cad-studio) (author)'
+        start_date: 2026
+        end_date: present
+        summary: 'Browser studio to design 3D-printed parts for LeRobot robots with an AI coding agent, check them, and test them in MuJoCo. [Live demo](https://zuoxingdong.github.io/lerobot-cad-studio/).'
+        highlights:
+          - 'Agent workflow: turns a part request into a prompt and context pack; the returned STL becomes a new part option.'
+          - 'Automatic checks: printability, fit and arm clearance, joint limits, camera view.'
+          - 'In-browser MuJoCo (WASM) simulation of LeKiwi + PincOpen with a lab sample-transport task; exports STL and MJCF.'
       - name: '[Mobile Manipulation with LeKiwi and PincOpen](https://huggingface.co/blog/zuoxingdong/mobile-manipulation-lekiwi-pincopen) — HF Blog'
         start_date: 2026
         end_date: present
@@ -116,7 +124,7 @@ cv:
       - label: Reinforcement Learning
         details: 'Offline RL (IQL, CQL), PPO, model-based RL (PILCO)'
       - label: Simulation & Evaluation
-        details: 'MuJoCo (RL policy training), LIBERO benchmark, OpenAI Gym / Gymnasium'
+        details: 'MuJoCo (RL policy training, browser WASM), LIBERO benchmark, OpenAI Gym / Gymnasium, CadQuery, three.js'
       - label: ML Engineering
         details: 'PyTorch, multi-GPU distributed training, Kubeflow, Docker, Polars, Trino SQL, Qdrant, Linux, Git, Claude Code'
       - label: Languages
